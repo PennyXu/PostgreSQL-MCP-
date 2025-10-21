@@ -89,10 +89,10 @@ def export_to_excel_and_email(sql: str, subject: str = None):
         logger.info(f"✅ Excel 文件已保存: {filepath}")
 
         # 3. 发送邮件
-        sender = 'xupeng23456@126.com'
-        receiver = '13913432072@163.com'
-        password = 'WLRLqGGD5hw5Ukri'
-        smtp_server = 'smtp.126.com'
+        sender = '发送人邮箱'
+        receiver = '收件人邮箱'
+        password = '发件人smtp密码'
+        smtp_server = 'smtp.126.com' #根据发件人邮箱修改smtp_server
         smtp_port = 465
 
         if not subject:
